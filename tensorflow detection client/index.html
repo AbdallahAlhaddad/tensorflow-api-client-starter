@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Disease detector</title>
+  
+  <!-- FilePond styles css (image uploader)-->
+  <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+
+  <!-- Filepond Plugin css (image Preview) -->
+  <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+
+  <!-- our custom styles -->
+  <link rel="stylesheet" href="styles.css">
+
+
+  <!-- Filepond Plugin js (image Preview) -->
+  <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js" ></script>
+
+  <!-- Filepond Plugin js (image Resize to send the image with the required resolution) -->
+  <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+
+  <!-- FilePond plugin js (file validation - used to make sure that png or jpg is uploaded) -->
+  <script defer src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+  
+  <!-- FilePond main script js (image uploader) (should come after plugins scripts) -->
+  <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
+  
+  <!-- Our js code -->
+  <script defer src="main.js"></script>
+
+</head>
+
+<body>
+  <div class="container"> 
+    <div class="center">
+      <h1>TensorFlow detector</h1>
+    </div>
+    <div class="center">
+      <input type="file" class="filepond" name="img_encoded" />
+    </div>
+    <div class="center" style="text-align: start;">
+      <ul id="results"></ul>
+    </div>
+
+  </div>
+</body>
+</html>

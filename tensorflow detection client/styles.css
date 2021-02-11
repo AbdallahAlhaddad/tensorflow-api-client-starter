@@ -1,0 +1,14 @@
+.filepond--root {
+  height: 430px;
+}
+
+.filepond--credits {
+  display: none;
+}
+
+.center {
+  max-width: 600px;
+  max-height: 500px;
+  margin: auto;
+  text-align: center;
+}
