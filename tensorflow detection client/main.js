@@ -1,5 +1,6 @@
 const imgWidth=224 //width of the image sent to server.
 const imgHeight=224 //height of the image sent to server.
+const url  ="http://192.168.1.28:3000/api"// "http://localhost:3000/api"
 let predictionResults = [] //set by server response
 
 const resultsList = document.getElementById("results")
@@ -23,9 +24,9 @@ function initializeFilePond(){
     
     // see: https://pqina.nl/filepond/docs/patterns/api/server/#configuration
     server: {
-      url: 'http://localhost:3000/api',
+      url,
       process: {
-          url: '/predict',
+          url: '/compress',
           method: 'POST',
           withCredentials: false,
 
