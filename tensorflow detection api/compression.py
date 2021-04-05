@@ -28,7 +28,7 @@ def preproccess(image: Image.Image):
     return image
 
 
-def predict(image: Image.Image):
+def compress(image: Image.Image):
     # make sure model is loaded:
     global model
     if model is None:
